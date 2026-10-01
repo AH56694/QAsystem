@@ -1,0 +1,7 @@
+streamlit==1.32.2
+py2neo==2021.2.4
+ollama==0.2.0
+numpy==1.26.4
+scikit-learn==1.4.1.post1
+pyahocorasick==2.1.0
+pytest==9.1.1
