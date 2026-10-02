@@ -15,7 +15,7 @@ class Settings:
     neo4j_database:str = "neo4j"
     project:str = "QAsystem_v1"
     ollama_host:str = "http://localhost:11434"
-    llm:str = "qwen:7b"
+    llm:str = "qwen:1.8b"
     entity_mode:str = "rule"
 
 
@@ -39,7 +39,7 @@ def load_settings():
         neo4j_database=os.getenv("NEW_NEO4J_DATABASE", "neo4j"),
         project=os.getenv("NEW_PROJECT_ID", "QAsystem_v1"),
         ollama_host=os.getenv("NEW_OLLAMA_HOST", "http://localhost:11434"),
-        llm=os.getenv("NEW_LLM", "qwen:7b"),
+        llm=os.getenv("NEW_LLM", "qwen:1.8b"),
         entity_mode=os.getenv("NEW_ENTITY_MODE", "rule"),
     )
     if not value.project.strip() or value.entity_mode not in {"rule","hybrid"}:
